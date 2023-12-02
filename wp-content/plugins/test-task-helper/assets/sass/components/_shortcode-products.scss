@@ -1,0 +1,15 @@
+.tth-shortcode-products {
+	display: grid;
+	grid-template: 1fr / repeat(2, 1fr);
+	gap: 20px;
+
+	a {
+		text-decoration: none;
+	}
+
+	.title {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

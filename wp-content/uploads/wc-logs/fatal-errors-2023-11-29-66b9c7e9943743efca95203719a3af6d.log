@@ -1,0 +1,40 @@
+2023-11-29T20:37:26+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - int in /var/www/html/wp-admin/includes/post.php:186
+Stack trace:
+#0 /var/www/html/wp-admin/includes/post.php(324): _wp_translate_postdata(true, Array)
+#1 /var/www/html/wp-admin/includes/ajax-actions.php(2138): edit_post()
+#2 /var/www/html/wp-includes/class-wp-hook.php(324): wp_ajax_inline_save('')
+#3 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /var/www/html/wp-admin/admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#6 {main}
+  thrown in /var/www/html/wp-admin/includes/post.php on line 186
+
+2023-11-29T20:37:35+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - int in /var/www/html/wp-admin/includes/post.php:186
+Stack trace:
+#0 /var/www/html/wp-admin/includes/post.php(324): _wp_translate_postdata(true, Array)
+#1 /var/www/html/wp-admin/includes/ajax-actions.php(2138): edit_post()
+#2 /var/www/html/wp-includes/class-wp-hook.php(324): wp_ajax_inline_save('')
+#3 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /var/www/html/wp-admin/admin-ajax.php(188): do_action('wp_ajax_inline-...')
+#6 {main}
+  thrown in /var/www/html/wp-admin/includes/post.php on line 186
+
+2023-11-29T22:57:30+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/wp-content/plugins/test-task-helper/includes/enqueue.php on line 7 and exactly 1 expected in /var/www/html/wp-includes/plugin.php:847
+Stack trace:
+#0 /var/www/html/wp-content/plugins/test-task-helper/includes/enqueue.php(7): plugin_dir_url()
+#1 /var/www/html/wp-includes/class-wp-hook.php(324): tth_enqueue_scripts('')
+#2 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /var/www/html/wp-includes/script-loader.php(2262): do_action('wp_enqueue_scri...')
+#5 /var/www/html/wp-includes/class-wp-hook.php(324): wp_enqueue_scripts('')
+#6 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /var/www/html/wp-includes/general-template.php(3052): do_action('wp_head')
+#9 /var/www/html/wp-includes/template-canvas.php(17): wp_head()
+#10 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#11 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#12 /var/www/html/index.php(17): require('/var/www/html/w...')
+#13 {main}
+  thrown in /var/www/html/wp-includes/plugin.php on line 847
+

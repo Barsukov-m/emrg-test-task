@@ -1,0 +1,41 @@
+.site-header {
+	& > .wp-block-group {
+		& > .wp-block-group {
+			justify-content: space-between;
+		}
+	}
+}
+
+.page-content {
+	max-width: 1280px;
+	padding: calc(min(6.5rem, 8vw));
+	margin: 0 auto;
+}
+
+.site-footer {
+	& > .wp-block-group {
+		& > .wp-block-columns {
+			& > .wp-block-column {
+				& > .wp-block-group {
+					justify-content: space-between;
+				}
+
+				&:first-child {
+					& > .wp-block-group {
+						flex-direction: column;
+						align-items: flex-start;
+					}
+				}
+
+				&:last-child {
+					& > .wp-block-group {
+						& > .wp-block-group {
+							flex-direction: column;
+							align-items: flex-start;
+						}
+					}
+				}
+			}
+		}
+	}
+}

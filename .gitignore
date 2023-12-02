@@ -1,0 +1,4 @@
+.ddev
+wp-config-ddev.php
+wp-config.php
+wp-content/plugins/*/node_modules

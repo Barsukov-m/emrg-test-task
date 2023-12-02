@@ -1,0 +1,16 @@
+{
+  "name": "test-task-helper",
+  "version": "1.0.0",
+  "description": "Helper functions and definitions for the EMRG WordPress developer test task.",
+  "scripts": {
+    "dev": "node-sass -w -o assets/css assets/sass/main.scss",
+    "build": "node-sass --output-style compressed -o assets/css assets/sass/main.scss && npm run prefix",
+    "prefix": "postcss --use autoprefixer -r --no-map assets/css assets/css"
+  },
+  "author": "Mykhailo Barsukov",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.31"
+  }
+}
